@@ -25,7 +25,7 @@ const getDataUser = (userid) => {
         if(!res.rows[0]){
           return reject({status:404, msg:"data not found"})
         }
-        return resolve({status:200, msg:"data found", data:res.rows[0]})
+        return resolve({status:200, msg:"data found", data:res.rows})
       })
     }
   })
